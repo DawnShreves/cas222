@@ -8,6 +8,7 @@ Programmer: Dawn Shreves
 @color2: #000000;
 @color3: #ffffff;
 @color4: #f5f3f1;
+@color5: #BBB3B2;
 
 /*
 
@@ -16,8 +17,9 @@ MOBILE STYLESHEET
 
 */
 body {
-     background-color: @color4;
+    height: 100%;
 }
+
 
 header {
     height: 100%;
@@ -25,6 +27,7 @@ header {
     border-radius: 7px;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-shadow: 4px 5px 4px rgba(92, 85, 82, .5);
     img {
         width: 75%;
         display: block;
@@ -48,7 +51,6 @@ nav {
     float: right;
 }
 .slicknav_menu li {
-   
     background: @color2;
     text-align: center;
     font-size: 20px;
@@ -64,133 +66,427 @@ h1 {
     font-size: 35px;
     font-family: Verdana, sans-serif;
 }
-p {
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-footer { 
-    width: 100%;
-    height: 100%;
-    background-color: @color1;
-    border-radius: 7px;
-    padding-bottom: 20px;
-    
-    p {
-        float: right;
-    }
-    .social img {
-        height: 40px;
-        width: 40px;
-        margin-left: 10px;
-        margin-top: 10px;
-        border-radius: 7px;
-    }
-    small {
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 100px;
+
+ main {
+     background-color: @color4;
+     border-radius: 7px;
+     box-shadow: 4px 5px 4px rgba(92, 85, 82, .5);
+     padding-top: 50px;
+     padding-bottom: 10px;
+     section {
+         img {
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
          }
-    }
-
-/*
-
-TABLET STYLESHEET
-
-The following CSS affects all screen sizes larger than 480 pixels wide.
-
-*/
-
-@media only screen and (min-width: 481px) {
-    header {
-        padding-bottom: 20px;
-    }
-   
-    .menu {
-        display: block;
-    }
-   
-    nav {
-       padding-bottom: 5px;
-        text-align: center;
-       
-        ul li {
-            display: inline; 
-            padding-right: 10px
-            
-           
-        }   
-        ul li a {
-            padding-right: 20px;
-            padding-left: 20px;
-            padding-bottom: 5px;
-            color: @color3;
-            background-color: @color2;
-            font-size: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-            border: 1px solid @color2;
-            border-radius: 7px;
-            box-shadow: 4px 5px 4px rgba(92, 85, 82, .5);
-        } 
-    }
-    .slicknav_menu {
-            display: none;
-        } 
-    h1 {
-        padding-top: 0;
-    }
-    footer {
-    text-align: left;
-    width: 100%;
+     }
+ }
+div .slideShow {
+    position: absolute;
+    padding-top: 50px;
+}
+div .slideShow img {
     height: 100%;
-    background-color: @color1;
-    border-radius: 7px;
-    padding-top: 20px;
-    float: left;
-    p {
-        float: right;
-    }
-    .social img {
-        height: 40px;
-        width: 40px;
-        float: right;
-        margin: 10px;
-        border-radius: 7px;
-    }
-       
+    width: 100%;
 }
-} 
+ .aceSlides {
+     display: none;
+ }
+ .buttonLeft {
+     color: @color3;
+     font-weight: bold;
+     background-color: @color2;
+ }
+ .buttonRight {
+     color: @color3;
+     font-weight: bold;
+     background-color: @color2;
+ }
+ .socialFeed {
+     text-align: center;
+     padding-bottom: 10px;
+ }
+ .fbFeed {
+     padding-left: 20px;
+ }
+     p {
+         margin: 20px;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     #infoImg1 {
+         width: 100%;
+     }
+     .toggle {
+         padding-left: 30px;
+     }
+     #infoImg2 {
+         display: none;
+     }
+     #infoImg3 {
+         display: none;
+     }
+     dt {
+         padding-left: 10px;
+         font-size: 18px;
+         font-weight: bold;
+         color: @color2;
+         font-family: Arial, Helvetica, sans-serif;
+         padding-bottom: 15px;
+     }
+    a #h1reg {
+             color: @color2;
+             text-decoration: none;
+     }
+     .column3 {
+         h3 {
+             margin-top: 5px;
+             margin-bottom: 5px;
+         }
+         p {
+             margin-top: 5px;
+             margin-bottom: 5px;
+         }
+         padding-left: 30px;
+     }
+     .column4 {
+         h3 {
+             margin-top: 5px;
+             margin-bottom: 5px;
+         }
+         p {
+             margin-top: 5px;
+             margin-bottom: 5px;
+         }
+         padding-left: 30px;
+     }
+     h2 {
+         padding-left: 40px;
+     }
+     .CI {
+         margin-left: 30px;
+         margin-right: 20px;
+     }
+     form {
+         font-family: Arial, Helvetica, sans-serif;
+         padding: 10px;
+
+         .info {
+             float: left;
+             width: 100px;
+             clear: left;
+             text-align: right;
+             padding-right: 10px;
+             margin-top: 10px;
+         }
+         .checkbox {
+             display: inline-block;
+             margin-bottom: 20px;
+         }
+         input, textarea {
+             margin-top: 10px;
+             display: block;
+         }
+         #mySubmit {
+             margin-left: 110px;
+         }
+         .eContact {
+             margin-top: 20px;
+         }
+     }
+    #regImg {
+        display: none;
+    }
+    #conImg {
+        display: none;
+    }
+     footer {
+         height: 100%;
+         width: 100%;
+         background-color: @color1;
+         border-radius: 7px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         text-align: center;
+         box-shadow: 4px 5px 4px rgba(92, 85, 82, .5);
+
+         .social img {
+             height: 40px;
+             width: 40px;
+             border-radius: 7px;
+         }
+
+         small {
+             font-weight: bold;
+             font-family: Arial, Helvetica, sans-serif;
+         }
+     }
+
+     /*
+
+     TABLET STYLESHEET
+
+     The following CSS affects all screen sizes larger than 480 pixels wide.
+
+     */
+
+     @media only screen and (min-width: 481px) {
+         body {
+             background-color: @color5;
+         }
+
+         header {
+             padding-bottom: 20px;
+             width: 99%;
+             margin: auto;
+         }
+
+         .menu {
+             display: block;
+         }
+
+         nav {
+             width: 99%;
+             margin: 10px auto 10px auto;
+             padding-top: 5px;
+             padding-bottom: 5px;
+             text-align: center;
+             background-color: @color4;
+             border-radius: 7px;
+             box-shadow: 4px 5px 4px rgba(92, 85, 82, .5);
+
+             ul li {
+                 display: inline;
+                 padding-right: 10px
 
 
-    
-/*
+             }
 
-DESKTOP STYLESHEET
+             ul li a {
+                 padding-right: 20px;
+                 padding-left: 20px;
+                 padding-bottom: 5px;
+                 color: @color3;
+                 background-color: @color2;
+                 font-size: 30px;
+                 font-family: Arial, Helvetica, sans-serif;
+                 text-decoration: none;
+                 border: 1px solid @color2;
+                 border-radius: 7px;
+                 box-shadow: 4px 5px 4px rgba(92, 85, 82, .5);
+             }
+         }
 
-The following CSS affects all screen sizes larger than 1024 pixels wide.
+         .slicknav_menu {
+             display: none;
+         }
 
-*/
 
-@media only screen and (min-width: 1025px) {
-    body {
-        width: 90%;
+    main {
+        width: 99%;
+        background-color: @color4;
         margin: auto;
-       
-    }
-    
-    nav {
-        a:hover {
-            color: @color1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        #infoImg2 {
+            display: block;
+            float: right;
+            width: 50%;
+            padding-left: 10px;
         }
-    }
-    footer {
-        text-align: center;
-        padding-top: 20px;
-        section {
-            padding-right: 200px;
-        }
-        small {
+        #infoImg3 {
+            display: block;
+            float: right;
+            width: 50%;
             padding-top: 50px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+        }
+        .CI {
+            margin-left: 30px;
+            margin-right: 20px;
+        }
+        h2 #CI {
+            padding-top: 30px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .column1 {
+            padding-left: 20px;
+        }
+        .column2 {
+            padding-left: 70px;
+        }
+        .column3 {
+            padding-left: 50px;
+        }
+
+        .column5 {
+           padding-left: 300px;
+            padding-bottom: 20px;
+        }
+        .column6 {
+            padding-right: 20px;
+        }
+        .column7 {
+            padding-left: 300px;
+            padding-bottom: 20px;
+        }
+        .column8 {
+            padding-right: 20px;
+        }
+        .about {
+            padding-left: 20px;
+            padding-right: 60px;
+        }
+        .weather {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 50px;
+            padding-top: 10px;
+
+        }
+        .socialFeed {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .fbFeed {
+            justify-self: end;
+        }
+        .info1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #regImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #conImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
+             footer {
+                 height: 100%;
+                 width: 99%;
+                 margin: 10px auto 10px auto;
+                 padding-top: 5px;
+                 padding-bottom: 20px;
+                 p {
+                     float: right;
+                     margin-top: 28px;
+                 }
+                 aside .small {
+                     width: 400px;
+                     height: 50px;
+                     padding-right: 90px;
+                     padding-bottom: 50px;
+                     float: right;
+                     display: block;
+                     text-align: center;
+                 }
+                 .social img {
+                     height: 40px;
+                     width: 40px;
+                     float: right;
+                     display: inline;
+                     position: relative;
+                     margin-top: 20px;
+                     margin-right: 10px;
+                     border-radius: 7px;
+                 }
+             }
 }
+
+
+     /*
+
+     DESKTOP STYLESHEET
+
+     The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+     */
+
+     @media only screen and (min-width: 1025px) {
+         body {
+             font-size: 18px;
+         }
+         header {
+             width: 90%;
+             margin-left: auto;
+             margin-right: auto;
+         }
+         nav {
+             width: 90%;
+             margin-left: auto;
+             margin-right: auto;
+             a:hover {
+                 color: @color1;
+             }
+         }
+         main {
+             width: 90%;
+             margin-left: auto;
+             margin-right: auto;
+         }
+         #faq {
+             padding-top: 50px;
+         }
+         #h1reg {
+             padding-top: 50px;
+         }
+         .toggle {
+             padding-bottom: 20px;
+         }
+          .column1 {
+             padding-left: 40px;
+         }
+         .socialFeed {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             .fbFeed {
+                 padding-left: 200px;
+             }
+             .twitter-timeline {
+                 margin-left: 80px;
+             }
+         }
+
+
+          #CI {
+              margin-top: 50px;
+          }
+         .row2 {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             padding-left: 10px;
+         }
+         aside.column5 {
+             padding-left: 40px;
+         }
+         .column6 {
+             padding-top: 100px;
+         }
+         footer {
+             width: 90%;
+             margin-left: auto;
+             margin-right: auto;
+             text-align: center;
+             padding-top: 20px;
+             padding-bottom: 30px;
+             section {
+                 padding-right: 200px;
+                 .social img{
+                     margin: 20px;
+                 }
+             }
+             small {
+                 padding-top: 50px;
+             }
+         }
+     }
